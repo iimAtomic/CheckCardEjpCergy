@@ -1,19 +1,11 @@
 export const dynamic = "force-dynamic";
-
-async function getVerse() {
-  const base = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
-  const res = await fetch(`${base}/api/verse`, { cache: "no-store" });
-  if (!res.ok) {
-    throw new Error("Impossible de charger un verset");
-  }
-  return res.json();
-}
+import { getUniqueVerse } from "../../lib/verseStore";
 
 export default async function CardPage() {
   let verse = null;
 
   try {
-    verse = await getVerse();
+    verse = getUniqueVerse();
   } catch (_error) {
     verse = null;
   }
