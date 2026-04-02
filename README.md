@@ -1,12 +1,11 @@
-# CheckCardEjpCergy
+# CheckCardEjpCergy (Next.js)
 
-Application web mobile-first en HTML/CSS/JS avec serveur Node:
+Application web mobile-first avec:
 
-- `index.html` : page d'accueil avec QR code
-- `card.html` : carte qui affiche automatiquement un verset
-- `verses.json` : liste des versets
-- `fond.png` : image de fond de la carte
-- `server.js` : serveur Node (fichiers statiques + API versets uniques)
+- `/` : page QR code
+- `/card` : carte verset automatique
+- `/api/verse` : API verset
+- `/api/fond` : image `fond.png`
 
 ## Personnaliser les versets
 
@@ -19,24 +18,17 @@ Edite `verses.json` avec ce format:
 ]
 ```
 
-## Lancer en local (Node)
+## Lancer en local
 
 ```bash
-npm start
+npm install
+npm run dev
 ```
 
 Puis ouvre `http://localhost:3000`.
 
-## API
-
-- `GET /api/verse`
-- Retourne un verset unique a chaque appel (pas de doublon tant que la liste n'est pas epuisee)
-- Quand tous les versets ont ete servis, la pile est melangee et recommence
-
 ## Deploiement Vercel
 
-1. Importer ce dossier dans Vercel
-2. Framework Preset: `Other`
-3. Build Command: vide
-4. Output Directory: vide
-5. Deploy
+1. Importer le repo dans Vercel
+2. Framework detecte automatiquement: `Next.js`
+3. Deploy

@@ -4,6 +4,14 @@
   "private": true,
   "description": "Carte verset mobile-first avec QR code",
   "scripts": {
-    "start": "node server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "qrcode": "latest",
+    "react": "latest",
+    "react-dom": "latest"
   }
 }
