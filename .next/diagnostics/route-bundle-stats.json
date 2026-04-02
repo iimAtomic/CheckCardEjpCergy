@@ -12,10 +12,11 @@
     ]
   },
   {
-    "route": "/_not-found",
-    "firstLoadUncompressedJsBytes": 513588,
+    "route": "/card",
+    "firstLoadUncompressedJsBytes": 514622,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0dbhjjzl8qfwv.js",
+      ".next/static/chunks/0emtnagyhojxn.js",
       ".next/static/chunks/0ht900cau6_ur.js",
       ".next/static/chunks/0p5.qr0b94vxo.js",
       ".next/static/chunks/0bogtdbh.dcu1.js",
@@ -23,7 +24,7 @@
     ]
   },
   {
-    "route": "/card",
+    "route": "/_not-found",
     "firstLoadUncompressedJsBytes": 513588,
     "firstLoadChunkPaths": [
       ".next/static/chunks/0dbhjjzl8qfwv.js",
