@@ -1,0 +1,9 @@
+{
+  "name": "check-card-ejp-cergy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Carte verset mobile-first avec QR code",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

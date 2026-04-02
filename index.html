@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carte Verset - Scan</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="home-page">
+    <main class="container">
+      <section class="panel">
+        <h1>Scanne pour recevoir un verset</h1>
+        <p class="subtitle">
+          Ouvre ton appareil photo, scanne le QR code et découvre une carte
+          inspirante.
+        </p>
+        <div id="qrcode" class="qr-box" aria-label="QR code vers la carte"></div>
+        <p id="card-link" class="link-hint"></p>
+      </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="./home.js"></script>
+  </body>
+</html>
