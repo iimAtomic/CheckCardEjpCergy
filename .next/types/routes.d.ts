@@ -5,7 +5,7 @@ type AppRoutes = never
 type AppRouteHandlerRoutes = "/api/fond" | "/api/verse"
 type PageRoutes = never
 type LayoutRoutes = "/"
-type RedirectRoutes = never
+type RedirectRoutes = "/card.html" | "/index.html"
 type RewriteRoutes = never
 type Routes = AppRoutes | PageRoutes | LayoutRoutes | RedirectRoutes | RewriteRoutes | AppRouteHandlerRoutes
 
@@ -14,6 +14,8 @@ interface ParamMap {
   "/": {}
   "/api/fond": {}
   "/api/verse": {}
+  "/card.html": {}
+  "/index.html": {}
 }
 
 

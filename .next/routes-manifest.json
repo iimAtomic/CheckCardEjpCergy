@@ -12,6 +12,18 @@
       "priority": true,
       "statusCode": 308,
       "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/index\\.html(?:/)?$"
+    },
+    {
+      "source": "/card.html",
+      "destination": "/card",
+      "statusCode": 308,
+      "regex": "^(?!/_next)/card\\.html(?:/)?$"
     }
   ],
   "headers": [],
