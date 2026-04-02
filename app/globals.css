@@ -28,7 +28,7 @@ body {
   font-family: var(--font-main);
   color: var(--text);
   background-color: var(--bg);
-  background-image: url("/api/fond");
+  background-image: url("/api/fond?v=2");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,7 +1,8 @@
-import fs from "fs";
-import path from "path";
+import fs from "node:fs";
+import path from "node:path";
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 export async function GET() {
   try {
@@ -12,7 +13,9 @@ export async function GET() {
       status: 200,
       headers: {
         "Content-Type": "image/jpeg",
-        "Cache-Control": "public, max-age=86400"
+        "Cache-Control": "no-store, no-cache, must-revalidate, proxy-revalidate",
+        Pragma: "no-cache",
+        Expires: "0"
       }
     });
   } catch (_error) {
