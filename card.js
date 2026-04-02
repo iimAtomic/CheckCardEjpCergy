@@ -7,7 +7,7 @@ function displayVerse(verse) {
 }
 
 async function loadVerseFromApi() {
-  const response = await fetch("./api/verse");
+  const response = await fetch("/api/verse");
   if (!response.ok) {
     throw new Error("Impossible de charger un verset");
   }

@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 const rootDir = __dirname;
 const versesPath = path.join(rootDir, "verses.json");
 
@@ -83,7 +83,9 @@ const server = http.createServer((req, res) => {
     return;
   }
 
-  let filePath = path.join(rootDir, requestUrl.pathname);
+  const safePath = requestUrl.pathname === "/" ? "index.html" : requestUrl.pathname.slice(1);
+  const normalizedPath = path.normalize(safePath);
+  let filePath = path.join(rootDir, normalizedPath);
   if (requestUrl.pathname === "/") {
     filePath = path.join(rootDir, "index.html");
   }
