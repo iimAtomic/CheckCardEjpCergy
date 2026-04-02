@@ -140,7 +140,7 @@ h1 {
 
 .verse-reference {
   margin: 0;
-  font-size: 0.92rem;
+  font-size: 2rem;
   color: #ffffff;
   font-weight: 600;
   font-family: var(--font-reference);
