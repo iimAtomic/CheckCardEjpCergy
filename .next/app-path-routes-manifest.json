@@ -2,6 +2,7 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/api/fond/route": "/api/fond",
+  "/api/font/route": "/api/font",
   "/api/verse/route": "/api/verse",
   "/card/page": "/card",
   "/page": "/"

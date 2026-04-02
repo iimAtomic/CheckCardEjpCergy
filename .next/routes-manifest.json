@@ -60,6 +60,12 @@
       "namedRegex": "^/api/fond(?:/)?$"
     },
     {
+      "page": "/api/font",
+      "regex": "^/api/font(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/font(?:/)?$"
+    },
+    {
       "page": "/api/verse",
       "regex": "^/api/verse(?:/)?$",
       "routeKeys": {},

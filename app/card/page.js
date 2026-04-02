@@ -12,15 +12,12 @@ export default async function CardPage() {
 
   return (
     <main className="container">
-      <article className="verse-card" role="region" aria-live="polite">
-        <img src="/api/fond" alt="" className="card-background" />
-        <div className="verse-overlay">
-          <blockquote className="verse-text">
-            {verse ? `"${verse.text}"` : "Erreur de chargement des versets."}
-          </blockquote>
-          <p className="verse-reference">{verse ? verse.reference : ""}</p>
-        </div>
-      </article>
+      <section className="verse-plain" role="region" aria-live="polite">
+        <blockquote className="verse-text">
+          {verse ? `"${verse.text}"` : "Erreur de chargement des versets."}
+        </blockquote>
+        <p className="verse-reference">{verse ? verse.reference : ""}</p>
+      </section>
     </main>
   );
 }
