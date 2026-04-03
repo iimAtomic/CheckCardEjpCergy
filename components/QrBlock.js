@@ -22,7 +22,7 @@ export default function QrBlock() {
       <div className="qr-box" aria-label="QR code vers la carte">
         <canvas id="qr-canvas" />
       </div>
-      <p className="link-hint">{url}</p>
+      {/* <p className="link-hint">{url}</p> */}
     </>
   );
 }
